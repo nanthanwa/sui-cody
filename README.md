@@ -144,6 +144,12 @@ Transaction Digest: 9EkYJGq6HHB9ohijXCQUfMxFDRFLV4HuyNPce6BuFzzm
 │ └── │
 ╰───────────────────────────────────────────────────────────────────────────────────────────────────╯
 
+<!-- deploy -->
+
+sui client publish --gas-budget 50000000 --skip-dependency-verification
+
+<!-- create sword -->
+
 sui client ptb \
  --move-call 0x4977b9fa85f7290f8565c1d65d3baf7963965548c481e7c1ef78056bbeb3e05f::hello::sword_create 3 3 \
  --assign sword \
